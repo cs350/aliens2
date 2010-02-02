@@ -16,6 +16,7 @@ CREATE TABLE IF NOT EXISTS `abduction_reports` (
   `date_abducted` date NOT NULL,
   `days_gone` int(11) NOT NULL,
   `how_many` int(11) NOT NULL,
+  `description` blob;
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 ;
 
@@ -24,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `abduction_reports` (
 --
 TRUNCATE TABLE abduction_reports;
 
-INSERT INTO `abduction_reports` (`id`, `firstname`, `lastname`, `email`, `city`, `state_abducted`, `activity`, `date_abducted`, `days_gone`, `how_many`) VALUES
-(1, 'Ann', 'Yakimo', 'annY@yahoo.com', 'Yuma', 'AZ', '', '2010-02-14', 0, 0),
+INSERT INTO `abduction_reports` (`id`, `firstname`, `lastname`, `email`, `city`, `state_abducted`, `activity`, `date_abducted`, `days_gone`, `how_many`, `description`) VALUES
+(1, 'Ann', 'Yakimo', 'annY@yahoo.com', 'Yuma', 'AZ', '', '2010-02-14', 0, 0 ),
 (2, 'John', 'Smith', 'littleJohn@uaz.edu', 'Tuba City', 'AZ', '', '2009-12-25', 0, 0),
 (3, 'Ben', 'Jacobs', 'rj@yahoo.com', 'Farmington', 'NM', '', '2009-010-31', 0, 0);

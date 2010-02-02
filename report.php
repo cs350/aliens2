@@ -10,9 +10,8 @@
 
 <body>
 <div id="wrap">
-	<div id="header"><h1>Aliens R Us</h1></div>
-	
-	<div id="nav"><p><i>The top uncensored site for the latest abudctions.</i></p></div>
+
+    <?php include("header.html"); ?>
 	<div id="main">
 	
 <?php
@@ -75,16 +74,8 @@
 	</div>
 	
 	
-	
-	
-	<div id="sidebar"><p><b>Search Site by City</b></p>
-	<form method="post" action="searchCity.php">
-	<input type="text" id="searchbox" name="searchbox" />
-	<input type="submit" value="go" name="submit" />
-	</form>
-	<p  class="side"><b>Featured Story:</b><br />
-	It is June 1969. My 4 year old daughter and I take my new Volkswagen "Bug" on a trip to the Midwest where I have family. I left about 3:00 a.m., loaded with Auto Club maps and made Flagstaff late that night staying at a motel. Early the next morning I stopped for gas and information. ... <br /><i>Submitted by Jeff Jarvis</i></p>
-	</div>
+    <?php include("sidebar.html"); ?>
+
 	<div id="footer"><p>This is a footer</p></div>
 </div>
 </body>

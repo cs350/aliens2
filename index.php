@@ -29,9 +29,7 @@
     <option>NM</option>
     <option>TX</option>
     </select> <br />
-        <label for="do">What did the aliens do?</label>
-    <input type="text" id="do" name="do" /> <br />
-
+  
     <label for="whenhappened">When did it happen?</label>
     <script>DateInput('whenhappened', true, 'YYYY-MM-DD')</script>
     <br />
@@ -41,19 +39,7 @@
     <input type="text" id="howmany" name="howmany" /><br />
     <p>Please describe what happened<p>
      <textarea id="other" name="description" rows="8" cols="54" ></textarea><br />
-    <p><b>Appearance of Aliens</b></p>
-    <div id="plain"><input type="checkbox" name="bald" value="checked" />bald</div></input><br />
-    <div id="plain"><input type="checkbox" name="blue" />blue</div><br />
-    <div id="plain"><input type="checkbox" name="blackeye" />big almond shaped black eyes</div><br />
-    <div id="plain"><input type="checkbox" name="longfingers" />long fingers</div><br />
-    <p>&nbsp;</p>
-    <label for="fangspotted">Have you seen my dog Fang?</label>
-    <div id="plain">Yes <input id="fangspotted" name="fangspotted" type="radio" value="yes" />
-    No <input id="fangspotted" name="fangspotted" type="radio" value="no" /></div><br />
-    <img src="fang.jpg" width="100" height="175"
-      alt="My abducted dog Fang." /><br />
-    <label for="other">Anything else you want to add?</label>
-    <textarea id="other" name="other"></textarea><br />
+
     <input type="submit" value="Report Abduction" name="submit" />
   </form>
 	

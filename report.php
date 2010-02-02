@@ -42,15 +42,17 @@
   		   "VALUES ('$firstname', '$lastname', '$email', '$city', '$state', '$when_it_happened')";
   
   echo "<p>$query</p>";
-  $result = mysqli_query($db, $query);
-  
+  $result = mysqli_query($db, $query)
+   or die("Error Querying Database");
+   
+   
   echo "<h1>Abductions by date</h1>";
   
   
   $query = "SELECT * FROM abduction_reports ORDER BY date_abducted";
   
-  $result = mysqli_query($db, $query);
-  
+  $result = mysqli_query($db, $query)
+   or die("Error Querying Database");
   
   echo "<table id=\"hor-minimalist-b\">\n<tr><th>Date</th><th>Abductee</th><th>City</th><th>State</th><tr>\n\n";
   
